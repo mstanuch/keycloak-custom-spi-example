@@ -2,8 +2,8 @@ version: '3'
 
 services:
   keycloak:
-    image: jboss/keycloak:14.0.0
-    container_name: keycloak
+    image: mstanuch/keycloak-custom-spi:latest
+    container_name: keycloak_custom_spi
     environment:
       DB_VENDOR: H2
       KEYCLOAK_USER: admin
